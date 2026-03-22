@@ -17,7 +17,7 @@ void expHandlerPlayer(Player &player, Levels &levels)
     {
     levels.currentLevel = player.experience;
 
-    levelUp(player);
+   // levelUp(player);
 
     if (levels.currentLevel == levels.lvl1_exp)
     {
@@ -54,8 +54,8 @@ void expHandlerPlayer(Player &player, Levels &levels)
     }
 }
 
-void levelUp(Player &player)
+/* void levelUp(Player &player)
 {
         this_thread::sleep_for(chrono::seconds(5*60));
         int currentExp = player.experience += 5;
-}
+} */

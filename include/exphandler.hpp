@@ -18,5 +18,5 @@ struct Levels
     int currentLevel =0;
 };
 
-void levelUp(Player &player);
+//void levelUp(Player &player);
 void expHandlerPlayer(Player &player,Levels &levels);
