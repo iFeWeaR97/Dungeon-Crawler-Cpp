@@ -43,6 +43,7 @@ void displayPlayerInfo(const Player &player)
     cout << "Level: " << player.level << endl;
     cout << "Health: " << player.health << endl;
     cout << "Experience: " << player.experience << endl;
+    cout << "Gold: " << player.gold << endl;
 }
 
 void playerDead(Player &player)

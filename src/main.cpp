@@ -10,6 +10,9 @@
 #include <exphandler.hpp>
 #include <thread>
 #include <mutex>
+#include <chrono>
+#include <gamelogic.hpp>
+
 
 using namespace std;
 std::mutex mtx;
@@ -27,6 +30,9 @@ int main()
 
     WelcomeMessage();
     //levelUp(player);
+
+    isDayTime();
+
 
     while (true)
     {
@@ -83,6 +89,13 @@ int main()
                 break;
             }
 
+            break;
+        }
+        case 'v':
+        {
+            cout << "You enter the village." << endl;
+            gameLogicGlobal();
+            GoldLogic();
             break;
         }
         case 'q':

@@ -10,6 +10,7 @@ struct Player
     string level = "No level";
     double health = 100.0;
     double experience = 0;
+    double gold = 0;
 };
 
 
